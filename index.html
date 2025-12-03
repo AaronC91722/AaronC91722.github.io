@@ -1,11 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>black wall</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Restaurant</title>
+  <link rel="icon" type="image/png" href="images\restaurant-logo-food-service-vector-600w-small.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="images\restaurant-logo-food-service-vector-600w-small.jpg" alt="Restaurant Logo">
+      <h1>Restaurant Is The Name Of The Game</h1>
+    </div>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#reservation">Reservations</a>
+      <a href="#order">Online Ordering</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#tour">Virtual Tour</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <h1> wow website </h1>
-    <p> wow what a hole </p>
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <img src="images\360_F_294263329_1IgvqNgDbhmQNgDxkhlW433uOFuIDar4.jpg" alt="Delicious restaurant" class="hero-image"/>
+      <div class="hero-content">
+        <h2>Welcome to Restaurant</h2>
+        <p>Fine dining, ingredients, and unforgettable flavors.</p>
+        <a href="#reservation" class="btn-primary">Find a Table</a>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section">
+      <h2>Our Menu</h2>
+      <div class="menu-grid">
+        <!--menu items-->
+        <article class="menu-item">
+          <div class="menu-image">
+            <img src="images\grilled-salmon-final-2.jpg" alt="Dish 1" />
+          </div>
+          <div class="menu-info">
+            <h3>Grilled Salmon</h3>
+            <p>Fresh Atlantic salmon with seasonal vegetables.</p>
+            <span class="price">$24.99</span>
+          </div>
+        </article>
+        
+        <article class="menu-item">
+          <div class="menu-image">
+            <img src="images\images.jpg" alt="Dish 2" />
+          </div>
+          <div class="menu-info">
+            <h3>Steak Frites</h3>
+            <p>Seared sirloin, herb butter, and crispy fries.</p>
+            <span class="price">$29.99</span>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <div class="menu-image">
+            <img src="images\images (1).jpg" alt="Dish 3" />
+          </div>
+          <div class="menu-info">
+            <h3>Build Your Own Pizza</h3>
+            <p>Pepperoni, Mushrooms, Sausage, Grilled Onions, Bell peppers, Pineapple, Bacon Tomato, mozzarella, basil, and olive oil.</p>
+            <span class="price">$16.99</span>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <div class="menu-image">
+            <img src="images\Birria-Tacos-114.jpg" alt="Dish 4" />
+          </div>
+          <div class="menu-info">
+            <h3>Tacos</h3>
+            <p>Carne Asada (grilled steak), Pollo Asado (grilled chicken), 
+              Carnitas (slow-cooked pork), Al Pastor (marinated pork cooked on a vertical spit), 
+              Barbacoa (slow-cooked beef, lamb or goat), Birria (stewed beef, goat, or lamb), 
+              Chorizo (Mexican spiced sausage), Lengua (beef tongue), Cabeza (head meat, usually beef), Tripa (beef tripe)</p>
+            <span class="price">$1.50 Each</span>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <div class="menu-image">
+            <img src="images\BreakfastBurritos_13.jpg" alt="Dish 5" />
+          </div>
+          <div class="menu-info">
+            <h3>Burritos</h3>
+            <p>Carne Asada (grilled steak), Pollo Asado (grilled chicken), 
+              Carnitas (slow-cooked pork), Al Pastor (marinated pork cooked on a vertical spit), 
+              Barbacoa (slow-cooked beef, lamb or goat), Birria (stewed beef, goat, or lamb), 
+              Chorizo (Mexican spiced sausage), Lengua (beef tongue), Cabeza (head meat, usually beef), Tripa (beef tripe)</p>
+            <span class="price">$15.99</span>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <div class="menu-image">
+            <img src="images\Baked-potato-bar-feature.jpg" alt="Dish 6" />
+          </div>
+          <div class="menu-info">
+            <h3>Loaded Baked Potato</h3>
+            <p>Butter, Sour cream, Shredded cheddar cheese, Bacon bits, 
+              Chives or green onions, Salt & pepper, Ranch dressing , 
+              Broccoli & cheese sauce, Chili, Pulled pork or BBQ chicken</p>
+            <span class="price">$10.99</span>
+          </div>
+        </article>
+
+        
+      </div>
+    </section>
+
+    <!-- RESERVATION FORM + AVAILABILITY -->
+    <section id="reservation" class="section section-alt">
+      <h2>Reserve a Table</h2>
+      <form id="reservation-form" class="form">
+        <div class="form-row">
+          <label for="res-name">Name</label>
+          <input type="text" id="res-name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="res-email">Email</label>
+          <input type="email" id="res-email" name="email" required />
+        </div>
+        <div class="form-row">
+          <label for="res-date">Date</label>
+          <input type="date" id="res-date" name="date" required />
+        </div>
+        <div class="form-row">
+          <label for="res-time">Time</label>
+          <input type="time" id="res-time" name="time" required />
+        </div>
+        <div class="form-row">
+          <label for="res-party">Party Size</label>
+          <input type="number" id="res-party" name="partySize" min="1" max="20" required />
+        </div>
+        <div class="form-row">
+          <label for="res-notes">Special Requests</label>
+          <textarea id="res-notes" name="notes" rows="3"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" id="check-availability" class="btn-secondary">
+            Check Availability
+          </button>
+          <button type="submit" class="btn-primary">
+            Confirm Reservation
+          </button>
+        </div>
+
+        <p id="availability-status" class="status-message"></p>
+        <p id="reservation-status" class="status-message"></p>
+      </form>
+    </section>
+
+    <!-- ONLINE ORDERING + CART -->
+    <section id="order" class="section">
+      <h2>Order Online</h2>
+      <div class="order-layout">
+        <div class="menu-list">
+          <h3>What We Have For Online Orders</h3>
+
+          <div class="order-item" data-id="1" data-name="Tacos" data-price="1.50">
+            <div>
+              <h4>Tacos</h4>
+              <p>Carne Asada (grilled steak), Pollo Asado (grilled chicken), Carnitas (slow-cooked pork), 
+                Al Pastor (marinated pork cooked on a vertical spit), Barbacoa (slow-cooked beef, lamb or goat), 
+                Birria (stewed beef, goat, or lamb), Chorizo (Mexican spiced sausage), Lengua (beef tongue), 
+                Cabeza (head meat, usually beef), Tripa (beef tripe).</p>
+            </div>
+            <div class="order-actions">
+              <span class="price">$1.50 each</span>
+              <button class="btn-sm add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="order-item" data-id="2" data-name="Burritos" data-price="15.99">
+            <div>
+              <h4>Burritos</h4>
+              <p>Carne Asada (grilled steak), Pollo Asado (grilled chicken), Carnitas (slow-cooked pork), 
+                Al Pastor (marinated pork cooked on a vertical spit), Barbacoa (slow-cooked beef, lamb or goat), 
+                Birria (stewed beef, goat, or lamb), Chorizo (Mexican spiced sausage), Lengua (beef tongue), 
+                Cabeza (head meat, usually beef), Tripa (beef tripe).</p>
+            </div>
+            <div class="order-actions">
+              <span class="price">$29.99</span>
+              <button class="btn-sm add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="order-item" data-id="3" data-name="Loaded Baked Potato" data-price="10.99">
+            <div>
+              <h4>Loaded Baked Potato</h4>
+              <p>Butter, Sour cream, Shredded cheddar cheese, Bacon bits, Chives or green onions, Salt & pepper, Ranch dressing , Broccoli & cheese sauce, Chili, Pulled pork or BBQ chicken.</p>
+            </div>
+            <div class="order-actions">
+              <span class="price">$10.99</span>
+              <button class="btn-sm add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+
+        <aside class="cart">
+          <h3>Your Cart</h3>
+          <ul id="cart-items"></ul>
+          <p class="cart-total">
+            Total: <span id="cart-total">$0.00</span>
+          </p>
+          <button id="checkout-button" class="btn-primary">Checkout</button>
+          <p id="order-status" class="status-message"></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section id="gallery" class="section section-alt">
+      <h2>Photo Gallery</h2>
+      <div class="gallery-grid">
+        <img src="images\352202386_807490174317772_7822706577510106660_n-e1699646440757.webp" alt="part Image 1" />
+        <img src="images\c27a01-2023-09-gettyimages-1322735931-e1695414857275-1400.jpg" alt="part Image 2" />
+        <img src="images\IMG_2196-e1762705983774.jpeg" alt="part Image 3" />
+        <img src="images\NewNormal39444-MA.jpg" alt="part Image 4" />
+      </div>
+    </section>
+
+    <!-- 360° VIRTUAL TOUR -->
+    <section id="tour" class="section">
+      <h2>360° Virtual Tour</h2>
+      <p>Explore our restaurant from every angle.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1764738873589!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREU4N0RGLWdF!2m2!1d39.01783460155751!2d-84.63353762989387!3f239.29770392337278!4f-4.4569229589435935!5f0.4176262834920772" width="1500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="tour-wrapper">
+        <iframe
+          id="virtual-tour"
+          src=""
+          width="100%"
+          height="450"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- CONTACT / HOURS / MAP / CONTACT FORM -->
+    <section id="contact" class="section section-alt">
+      <h2>Contact & Visit Us</h2>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h3>Contact</h3>
+          <p><strong>Phone:</strong> 505-503-4455</p>
+          <p><strong>Email:</strong> contact@Restaurant.com</p>
+          <p><strong>Address:</strong> 101 Silly Sausage Street, Lazy town City</p>
+
+          <h3>Opening Hours</h3>
+          <table class="hours-table">
+            <tr><td>Mon–Thu</td><td>7:00 AM – 11:00 PM</td></tr>
+            <tr><td>Fri–Sat</td><td>8:00 AM – 12:00 PM</td></tr>
+            <tr><td>Sunday</td><td>7:00 PM – 8:00 PM</td></tr>
+          </table>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <h3>Send us a Message</h3>
+          <form id="contact-form" class="form">
+            <div class="form-row">
+              <label for="contact-name">Leave Your Name</label>
+              <input type="text" id="contact-name" name="name" required placeholder="I will find you"/>
+            </div>
+            <div class="form-row">
+              <label for="contact-email">Leave an Email</label>
+              <input type="email" id="contact-email" name="email" required placeholder="It better not bounce"/>
+            </div>
+            <div class="form-row">
+              <label for="contact-message">Leave an Message</label>
+              <textarea id="contact-message" name="message" rows="3" required placeholder="it better be funny if not well"> </textarea>
+            </div>
+            <button type="submit" class="btn-primary">Pls, dont Send</button>
+            <p id="contact-status" class="status-message"></p>
+          </form>
+        </div>
+
+        <div class="map-wrapper">
+          <h3>Find Us</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1579.0028425398384!2d-122.08578473652348!3d37.67257420000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f91629dfeabaf%3A0xca741e8e86d8d72e!2sThe%20Dirty%20Bird%20Lounge!5e0!3m2!1sen!2sus!4v1764739457828!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src=""
+            width="100%"
+            height="250"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Restaurant. All rights reserved. Don't try us we will break your knee caps</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
 </html>
